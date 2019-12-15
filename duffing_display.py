@@ -28,6 +28,8 @@ vsplit = data[1].reshape(ncycle, nitt)
 xsplit = xsplit.T
 vsplit = vsplit.T
 
+plt.style.use('dark_background')
+
 #declaring figure
 fig = plt.figure()
 ax = fig.add_subplot(111)
@@ -46,9 +48,9 @@ def update(frame):
     ax.set_ylabel('velocity', fontsize=13)
     ax.set_xlim(xmin,xmax)
     ax.set_ylim(ymin,ymax)
-    ax.plot(xsplit[frame], vsplit[frame], '.', markersize=1, color="black")
+    ax.plot(xsplit[frame], vsplit[frame], '.', markersize=1, color="white")
 
 ani = animation.FuncAnimation(fig, update, nitt, interval=50)
-ani.save('duffing.gif', writer="imagemagick")
+ani.save('duffing_dark.gif', writer="imagemagick")
 
 plt.show()
