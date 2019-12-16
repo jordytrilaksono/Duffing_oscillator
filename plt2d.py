@@ -6,8 +6,6 @@ import pandas as pd
 import vtk
 from mayavi import mlab
 
-#def duffing(var, t, alpha, beta, gamma, delta, omega, theta):
-
 #parameters
 ncycle = 3000
 nitt = 100
