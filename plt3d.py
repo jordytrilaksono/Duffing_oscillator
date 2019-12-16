@@ -2,8 +2,8 @@ from scipy.integrate import odeint
 import numpy as np
 import vtk
 from mayavi import mlab
-from tvtk.tools import visual
-import os
+#from tvtk.tools import visual
+#import os
 
 #t = np.linspace(0, 2*np.pi, 50)
 #u = np.cos(t)*np.pi
